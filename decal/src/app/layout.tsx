@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Comic_Neue, Roboto } from "next/font/google";
 import "./globals.css";
+import ResponsiveNav from "../components/home/Navbar/ResponsiveNav";
 
 const roboto = Roboto({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -25,8 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${comic.className} ${roboto.className} bg-white antialiased`}
+        className={`${comic.className} ${roboto.className} bg-cyan-900 antialiased`}
       >
+        <ResponsiveNav />
         {children}
       </body>
     </html>
