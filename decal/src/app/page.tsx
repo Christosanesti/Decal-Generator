@@ -6,7 +6,6 @@ const MainPage = () => {
   return (
     <div>
       <HomePage />
-      <RecentImage />
     </div>
   );
 };
